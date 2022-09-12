@@ -6,7 +6,7 @@ const AddNewPostModal = ({ onCancel, form, open, onSubmit }) => {
     <Modal
       open={open}
       title='Create A New Post'
-      onCancel={() => onCancel}
+      onCancel={onCancel}
       footer={[
         // Use custom footer
         // The form value must be the same as Form name below (🤡) which is `postName`

@@ -67,10 +67,12 @@ const CardList = () => {
         const { id, message, isPosted, title } = post
 
         return (
-          <div className={styles.cardWrapper}>
+          <div
+            // Don't forget to add `key` props so React won't yell at you
+            key={id}
+            className={styles.cardWrapper}
+          >
             <Card
-              // Don't forget to add `key` props so React won't yell at you
-              key={id}
               message={message}
               isPosted={isPosted}
               title={title}
